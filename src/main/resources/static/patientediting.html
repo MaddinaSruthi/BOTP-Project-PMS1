@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Patient Onboarding</title>
+</head>
+<body>
+<h1 ALIGN="center"  STYLE="font-size:40px;"><b>Patient Onboarding</b></h1>
+<form action="/patients" method="post">
+<!-- Patient Information -->
+<h2 ALIGN="center" STYLE="font-size:30px;">Patient Editing</h2>
+
+<style>
+body{
+background-image:
+url('\hospital3.jpg');
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+h1,h2
+{
+font-family:Comic Sans;
+font-style:italic;
+color:#171009;
+}
+
+td
+{
+padding:5px;
+border-spacing: 15px;
+font-size:23px;
+font-weight:bold;
+}
+td>input,td>select
+{
+display:inline-block;
+height:25px;
+}
+td>button
+{
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+<table border="0" align="center">
+<tbody>
+<tr>
+<td><label for="name">Edit Name:</label></td>
+<td><input type="text" id="name" name="name" required><br></tr>
+</td>
+
+<tr>
+<td><label for="dateOfBirth">Edit Date of Birth:</label></td>
+<td><input type="date" id="dateOfBirth" name="dateOfBirth" required><br></tr>
+</td>
+
+<tr>
+<td><label for="address">Edit Address:</label></td>
+<td><textarea id="address" name="address" rows="4" cols="50" required></textarea><br></tr>
+</td>
+
+<tr>
+<td><label for="idProofDetails">Edit ID Proof Details:</label></td>
+<td><input type="text" id="idProofDetails" name="idProofDetails" required><br></tr>
+</td>
+
+<tr>
+<td><label for="contactNumber">Edit Contact Number:</label></td>
+<td><input type="tel" id="contactNumber" name="contactNumber" required><br></tr>
+</td>
+
+<tr>
+<td><label for="emergencyContactNumber">Edit Emergency Contact Number:</label></td>
+<td><input type="tel" id="emergencyContactNumber" name="emergencyContactNumber" required><br></tr>
+</td>
+
+<tr>
+<td><label for="illness">Edit Primary Illness:</label></td>
+<td><input type="text" id="illness" name="primaryIllness" required><br></tr>
+</td>
+
+<tr>
+<td><label for="symptoms">Edit Symptoms:</label></td>
+<td><textarea id="symptoms" name="symptoms" rows="4" cols="50" required></textarea><br></tr>
+</td>
+
+<tr>
+<td><label for="healthInsurance">Edit Health Insurance:</label></td>
+<td><input type="text" id="healthInsurance" name="healthInsurance"><br></tr>
+</td>
+
+<tr>
+<td><label for="preferredDoctorGender">Edit Preferred Doctor Gender:</label></td>
+<td><select id="preferredDoctorGender" name="preferredDoctorGender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select><br></tr>
+</td>
+
+<tr>
+<td colspan="2" align="center" style="padding:10px;"><button id=btn onclick="getValues()">SUBMIT</button>
+</td></tr>
+
+</tbody>
+</table>
+</body>
+
+</html>
